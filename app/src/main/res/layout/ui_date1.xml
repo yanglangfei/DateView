@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00ff00"
+        app:layout_heightPercent="30%"
+        android:text="h:30% ==w:50%"
+        android:gravity="center"
+        app:layout_widthPercent="50%">
+    </TextView>
+    <com.ylf.jucaipen.dateview.com.ylf.jucaipen.view.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%"
+        android:background="#ff0000"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="10%"
+        android:orientation="vertical">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#ff0ff0"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="30%"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#dedff0"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="50%"
+            app:layout_marginTopPercent="10%"
+            app:layout_marginLeftPercent="10%"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#1254f0"
+            android:layout_gravity="right"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="40%"
+            app:layout_marginTopPercent="10%"
+            app:layout_marginRightPercent="20%"
+            />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/btn_born"
-        android:text="选择出生日期"/>
+    </com.ylf.jucaipen.dateview.com.ylf.jucaipen.view.PercentLinearLayout>
 
 
 
-</RelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
