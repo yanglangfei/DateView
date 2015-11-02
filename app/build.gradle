@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile 'com.android.support:percent:23.1.0'
     compile files('libs/cordova-2.8.1.jar')
+    compile files('libs/jsoup-1.7.2.jar')
 }
